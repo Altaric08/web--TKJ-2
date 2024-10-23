@@ -1,0 +1,67 @@
+body {
+    background-image: url('rawr.jpg');
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
+}
+
+.navbar {
+    font-size: 40px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    background-size: cover;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+}
+
+.form-grup {
+    position: relative;
+    margin: 12px 0;
+
+}
+
+.form-grup input {
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: #acacac solid 2px;
+    background-color: transparent;
+    transition: 0.15s all ease;
+
+}
+
+.form-grup input:focus {
+    background-color: aqua;
+}
+
+.form-grup input::placeholder{
+    color: transparent;
+}
+
+.form-grup .form-label {
+    position: absolute;
+    top: 9px;
+    left: o;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #acacac;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+.form-grup input:focus + .form-label,
+.form-grup input:not(:placeholder-shown) +
+.form-label {
+    transform: translate (5px -22px) ;
+    background-color : black;
+    font-size: 14px;
+    color: #acacac;
+}

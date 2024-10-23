@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title>Halaman Web dengan Layout CSS</title>
+<style>
+    body, h1,h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('yy.jpg');
+    background-size: cover;
+    }
+    
+    /* Header styling */
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    header h1 {
+    margin-bottom: 0.5rem;
+    }
+    
+    nav {
+    width: 100%;
+    }
+    
+    nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    }
+    
+    nav ul li {
+    margin: 0 1rem;
+    }
+    
+    nav ul li a {
+    color: lightblue;
+    text-decoration: underline;
+    }
+    
+    nav ul li a:hover {
+    text-decoration: underline;
+    }
+    
+    /* Main section styling */
+    main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    }
+    
+    /* Intro section styling */
+    .intro {
+    background-color: #abf877e5;
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transform: scale(1.05);
+    transition: transfrom 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    } 
+    
+    
+    .intro h2 {
+    color: #000000;
+    }
+    
+    /* Content section styling */
+    .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    }
+    
+    /* Card styling */
+    .card {
+    background-color: #abf877e5;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    padding: 1rem;
+    flex: 1 1 calc(33.333% - 1rem); /* Three cards per row */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    }
+    
+    .card h3 {
+    margin-bottom: 0.5rem;
+    }
+    
+    /* Footer styling */
+    footer {
+    background-color: #333;
+    color: aqua;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    text-decoration-line: underline;
+    }
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        position: top;
+    }
+   
+    .yy {
+        font-size: 35px;
+        color: red;
+    }
+
+    .r {
+        font-size: 40px;
+    
+    }
+
+    .rls {
+        background-color: #abf877e5;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    padding: 1rem;
+    flex: 1 1 calc(33.333% - 1rem); /* Three cards per row */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    }
+      
+    
+    
+</style>
+</head>
+<body>
+ <header>
+ <h1>Website Saya</h1>
+ <nav>
+ <ul class="item">
+ <li><a href="#">Beranda</a></li>
+ <li><a href="#">Tentang</a></li>
+ <li><a href="#">Layanan</a></li>
+ <li><a href="#">Kontak</a></li>
+ </ul>
+ </nav>
+ </header>
+ <main>
+ <section class="intro">
+    <h2 class="rr">Pengantar</h2>
+ <marquee>
+    <p class="yy">Selamat datang di website kami! Ini adalah website "Kelas TKJ 2"
+        </p>
+ </marquee>
+ </section>
+ <section class="content">
+    <div class="rls">
+        <h2 class="ram">Wali Kelas</h2>
+        <marquee>
+            <p class="yy"> Sti Nurhayati SE</p>
+        </marquee>
+    </div>
+ <div class="card">
+ <h3 class="rr">Ketua Kelas</h3>
+ <marquee>
+    <p class="yy">Risma Maulia Damayanti</p>
+ </marquee>
+ </div>
+ <div class="card">
+ <h3 class="rr">Kelas</h3>
+ <marquee>
+    <p class="yy">XI TKJ 2</p>
+ </marquee>
+ </div>
+ <div class="card">
+ <h3 class="rr">Wakil Kelas</h3>
+ <marquee>
+    <p class="yy"> Hidayatul Mustaqim</p>
+ </marquee>
+ </div>
+ </section> 
+ </main>
+ <footer>
+ <p>&copy; 2024 Website Saya. Semua Hak Dilindungi.</p>
+ </footer>
+</body>
+</html>

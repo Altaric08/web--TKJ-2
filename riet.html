@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="riet.css">
+</head>
+<body>
+    <section>
+        <form onsubmit="return validasi()">
+        <h1 class="navbar"> Login</h1>
+        <div class="form-grup">
+            <input type="text" id= "name"  placeholder="Name">
+            <label class="form-label"> Name </label>
+        </div>
+        <div class="form-grup">
+            <input type="password" id= "pass" placeholder="password">
+            <label class="form-label"> password </label>
+        </div>
+        <div class="reksa">
+            <input type="submit" value="login"> 
+        </div>
+        </form>
+    </section>
+    <section>
+        <script>
+            function validasi(){
+                var name = document.getElementById("name").value;
+                var pass = document.getElementById("pass").value;
+
+                var validuser = "TKJ 2";
+                var validpass = "TKJ 2";
+
+                if ( name === validuser && pass == validpass ) {
+                alert ("selamat datang" + pass);
+                window.open("rksa.html","blank")
+                return true;                
+                }else{
+                alert ("name atau password salah ");
+                return false;
+                }
+            }
+</script>        
+</body>
+</html>
